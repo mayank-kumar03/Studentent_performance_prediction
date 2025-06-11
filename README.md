@@ -58,9 +58,9 @@ A machine learning-based web application built with Flask to **predict a student
 Clone the project:
 
 ```bash
-git clone https://github.com/kTechKeshav/Student_Performance_Indicator.git
+git clone https://github.com/mayank-kumar03/Studentent_performance_prediction
 
-cd Student_Performance_Indicator
+cd Student_Performance
 ```
 
 ## 📁 Project Structure
