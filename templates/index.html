@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Performance Predictor</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #0f2027; /* Deep blue gradient base */
+            background: linear-gradient(135deg, #2c5364 0%, #203a43 50%, #0f2027 100%);
+            color: #f8fafc;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(34, 40, 49, 0.98);
+            border-radius: 22px;
+            box-shadow: 0 8px 32px 0 rgba(44, 83, 100, 0.45);
+            padding: 44px 36px;
+            max-width: 440px;
+            text-align: center;
+            border: 1.5px solid #3a506b;
+        }
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 0.6em;
+            color: #5eead4; /* teal accent */
+            letter-spacing: 1px;
+        }
+        ul {
+            text-align: left;
+            margin: 1.5em 0 2em 0;
+            padding-left: 1.2em;
+        }
+        li {
+            margin-bottom: 0.7em;
+            font-size: 1.08em;
+        }
+        .btn {
+            background: linear-gradient(90deg, #5eead4 0%, #3b82f6 100%);
+            color: #23283a;
+            border: none;
+            border-radius: 10px;
+            padding: 1em 2.4em;
+            font-size: 1.13em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            margin-top: 1.7em;
+            box-shadow: 0 2px 12px rgba(59, 130, 246, 0.18);
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #3b82f6 0%, #5eead4 100%);
+            color: #fff;
+        }
+        .desc {
+            color: #a5b4fc;
+            margin-bottom: 1.2em;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Student Performance Predictor</h1>
+        <div class="desc">
+            Predict a student's performance score using  Regression.<br>
+            Real-time, accurate, and easy to use!
+        </div>
+        <ul>
+            <li>📝 Input fields for:
+                <ul>
+                    <li>Hours Studied</li>
+                    <li>Previous Scores</li>
+                    <li>Extracurricular Activities (0=No, 1=Yes)</li>
+                    <li>Sleep Hours</li>
+                    <li>Sample Question Papers Practiced</li>
+                </ul>
+            </li>
+            <li>📈 Predicts performance score based on inputs</li>
+        </ul>
+        <a href="{{ url_for('predict') }}">
+            <button class="btn">Predict Now</button>
+        </a>  
+    </div>
+</body>
+</html>
