@@ -8,7 +8,7 @@
 
 A machine learning-based web application built with Flask to **predict a student's performance score** based on multiple academic and behavioral factors like study hours, sleep hours, past scores, etc.
 
-> 🚀 Live Demo: [Click here to try](https://student-performance-indicator-ea1b.onrender.com/predict)
+> 🚀 Live Demo: [Click here to try](https://studentent-performance-prediction.onrender.com)
 
 ---
 
